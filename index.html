@@ -6,14 +6,15 @@
 </head>
 <body>
     <header>
-        <h1 class="title">Title</h1>
+        <script src="title.js"></script>
         <section>
             <img  class="banner" src="https://via.placeholder.com/2000x200/8f8d8d/d6cfcf" alt="Large placeholder image"/>
             <nav>
                  <ul>
                     <li><a href="">Link A</a></li>
                     <li><a href="">Link B</a></li>
-                    <li><a href="">Link C</a></li>
+                    <li><a href='#' onclick='myclick()'>Staff Page</a></li>
+                    <script src="account.js"></script>
                 </ul>
             </nav>
         </section>
@@ -55,5 +56,12 @@
         <a href="https://mikemac1.github.io/hello-world/">The Adventures of Blondie & Laszlo!</a>
         <p>&copy; 102d43</p>
     </footer>
+
+    <script type="text/javascript">
+        window.addEventListener('beforeunload', function (e) {
+            e.preventDefault();
+            e.returnValue = '';
+        });
+    </script>
 </body>
 </html>
