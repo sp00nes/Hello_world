@@ -5,8 +5,11 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="script.js" type="text/javascript"></script>
     <header>
-        <script src="title.js"></script>
+        <script type="text/javascript">
+            title()
+        </script>
         <section>
             <img  class="banner" src="https://via.placeholder.com/2000x200/8f8d8d/d6cfcf" alt="Large placeholder image"/>
             <nav>
@@ -14,7 +17,7 @@
                     <li><a href="">Link A</a></li>
                     <li><a href="">Link B</a></li>
                     <li><a href='#' onclick='myclick()'>Staff Page</a></li>
-                    <script src="account.js"></script>
+                    
                 </ul>
             </nav>
         </section>
@@ -58,10 +61,7 @@
     </footer>
 
     <script type="text/javascript">
-        window.addEventListener('beforeunload', function (e) {
-            e.preventDefault();
-            e.returnValue = '';
-        });
+            close()
     </script>
 </body>
 </html>
